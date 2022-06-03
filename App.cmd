@@ -7,7 +7,7 @@ chcp 65001
 set input_strong =
 
 echo -------------------------------------------------------------
-echo Web更新のAppを開くにはcmdと入力してください.
+echo Web更新を行う場合は、replaceと入力してください。
 echo -------------------------------------------------------------
 
 color b0
@@ -18,7 +18,7 @@ echo %input_strong%
 
 pause
 
-if %input_strong%==cmd (
+if %input_strong%==replace (
     git add .
     git commit -m "commit"
     git push origin master
