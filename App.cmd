@@ -19,7 +19,9 @@ echo %input_strong%
 pause
 
 if %input_strong%==cmd (
-    start cmd
+    git add .
+    git commit -m "commit"
+    git push origin master
 ) else (
     goto :A
 )
