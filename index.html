@@ -8,6 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <object data="sample.txt" type="text/plain" style="color:aqua;"></object>
+    <div id="insertText"></div>
+<script>
+fetch( "sample.txt" ).then( res => res.text() ).then( text => {
+document.getElementById( "insertText" ).textContent = text;
+} );
+</script>
+
+
 </body>
 </html>
