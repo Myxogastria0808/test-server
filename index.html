@@ -8,13 +8,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="insertText"></div>
+
+    <div class="button03">
+        <a href="">
+            <div id="insertText"></div>
+            <script>
+            fetch( "./sample.txt" ).then( res => res.text() ).then( text => {
+            document.getElementById( "insertText" ).textContent = text;
+            } );
+            </script>
+        </a>
+      </div>
+
+    <!-- <div id="insertText"></div>
 <script>
 fetch( "./sample.txt" ).then( res => res.text() ).then( text => {
 document.getElementById( "insertText" ).textContent = text;
 } );
-</script>
-
-
+</script> -->
 </body>
 </html>
